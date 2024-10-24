@@ -52,7 +52,7 @@ const SmHeader = () => {
           <li key={link.href} className="w-full">
             <a
               href={link.href}
-              className="flex items-center gap-4 text-2xl font-medium text-gray-800 hover:text-blue-500"
+              className="flex items-center gap-4 text-2xl font-medium text-secondary hover:text-blue-500"
             >
               <link.icon size={26} />
               {link.label}
@@ -63,7 +63,7 @@ const SmHeader = () => {
           <li key={link.href} className="w-full">
             <a
               href={link.href}
-              className="flex items-center gap-4 text-2xl font-medium text-gray-800 hover:text-blue-500"
+              className="flex items-center gap-4 text-2xl font-medium text-secondary hover:text-blue-500"
             >
               <link.icon size={26} />
               {link.label}

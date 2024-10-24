@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import { Footer } from "@/components/Footer";
 import SmHeader from "@/components/SmHeader";
+import { Tesmonial } from "@/components/Tesmonials";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
               <SmHeader />
             </div>
             {children}
+            <Tesmonial />
             <Footer />
           </div>
         </div>
