@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Profile from "../../public/images/Profile.jpg";
-import { FiAlignJustify } from "react-icons/fi"; // Default mobile toggle icon
+import { FiAlignJustify } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import { navlinks } from "@/constants/navlinks";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
@@ -9,7 +9,7 @@ import { socials } from "@/constants/socials";
 import { Badge } from "./Badge";
 import { Navlink } from "@/types/navlink";
 import { usePathname } from "next/navigation";
-import Link from "next/link"; // Next.js Link component for client-side navigation
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 const people = [
@@ -22,13 +22,11 @@ const people = [
 ];
 
 const SmHeader = () => {
-  const [isOpen, setIsOpen] = useState(false); // Track toggle state
-  const pathname = usePathname(); // Get current path
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
-  // Function to check if the link is active
   const isActive = (href: string) => pathname === href;
 
-  // Function to toggle mobile menu
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
   };
@@ -42,9 +40,9 @@ const SmHeader = () => {
         {/* Mobile Toggle Button */}
         <div className="cursor-pointer" onClick={handleToggle}>
           {isOpen ? (
-            <IoMdClose className="h-7 w-7" /> // Close icon
+            <IoMdClose className="h-7 w-7" />
           ) : (
-            <FiAlignJustify className="h-7 w-7" /> // Mobile toggle icon
+            <FiAlignJustify className="h-7 w-7" />
           )}
         </div>
       </div>
@@ -61,16 +59,17 @@ const SmHeader = () => {
           <li key={link.href} className="w-full">
             <Link
               href={link.href}
+              onClick={handleToggle} // Close modal on nav link click
               className={twMerge(
                 "flex items-center gap-4 text-xl font-medium text-secondary hover:text-blue-500",
-                isActive(link.href) && "text-blue-500" // Active link style
+                isActive(link.href) && "text-blue-500"
               )}
             >
               <link.icon
                 size={26}
                 className={twMerge(
                   "flex-shrink-0",
-                  isActive(link.href) && "text-sky-500" // Icon active color
+                  isActive(link.href) && "text-sky-500"
                 )}
               />
               {link.label}
@@ -82,6 +81,7 @@ const SmHeader = () => {
           <li key={link.href} className="w-full">
             <Link
               href={link.href}
+              onClick={handleToggle} // Close modal on social link click
               className="flex items-center gap-4 text-xl font-medium text-secondary hover:text-blue-500"
             >
               <link.icon size={26} />

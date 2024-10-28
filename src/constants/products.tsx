@@ -56,14 +56,14 @@ export const products = [
     ),
   },
   {
-    href: "https://gomoonbeam.com",
-    title: "Moonbeam",
+    href: "https://ecommerce-rscr.onrender.com/",
+    title: "Ecommerce Project",
     description:
       "Never write from scratch again with Moonbeam, your AI first writing tool",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "moonbeam",
+    stack: ["Html", "CSS", "Bootstrap", "JavaScript", "Jquery", "Django", "Paypal"],
+    slug: "kongalike",
     content: (
       <div>
         <p>

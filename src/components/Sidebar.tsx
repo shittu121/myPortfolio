@@ -12,7 +12,7 @@ import { Badge } from "./Badge";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { isMobile } from "@/lib/utils";
-import Profile from "../../public/images/Profile.jpg"
+import Profile from "../../public/images/Profile.jpg";
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(isMobile() ? false : true);
