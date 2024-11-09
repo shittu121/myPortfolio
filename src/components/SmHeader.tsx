@@ -61,7 +61,7 @@ const SmHeader = () => {
               href={link.href}
               onClick={handleToggle} // Close modal on nav link click
               className={twMerge(
-                "flex items-center gap-4 text-xl font-medium text-secondary hover:text-blue-500",
+                "flex items-center gap-4 text-sm font-medium text-secondary hover:text-blue-500",
                 isActive(link.href) && "text-blue-500"
               )}
             >
@@ -82,7 +82,7 @@ const SmHeader = () => {
             <Link
               href={link.href}
               onClick={handleToggle} // Close modal on social link click
-              className="flex items-center gap-4 text-xl font-medium text-secondary hover:text-blue-500"
+              className="flex items-center gap-4 text-sm font-medium text-secondary hover:text-blue-500"
             >
               <link.icon size={26} />
               {link.label}
