@@ -51,17 +51,17 @@ const SmHeader = () => {
       <ul
         className={`transition-transform duration-300 ease-in-out transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg flex flex-col items-center py-20 px-10 space-y-4 z-40`}
+        } fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg flex flex-col items-center justify-center mx-auto py-20 space-y-4 z-40`}
       >
         <IoMdClose onClick={handleToggle} className="h-8 w-8 fixed top-5 right-5" />
 
         {navlinks.map((link: Navlink) => (
-          <li key={link.href} className="w-full">
+          <li key={link.href} className="w-full mx-auto">
             <Link
               href={link.href}
               onClick={handleToggle} // Close modal on nav link click
               className={twMerge(
-                "flex items-center gap-4 text-xl font-medium text-secondary hover:text-blue-500",
+                "flex items-center justify-center gap-4 text-xl mx-auto font-medium text-secondary hover:text-blue-500",
                 isActive(link.href) && "text-blue-500"
               )}
             >
@@ -78,11 +78,11 @@ const SmHeader = () => {
         ))}
 
         {socials.map((link: Navlink) => (
-          <li key={link.href} className="w-full">
+          <li key={link.href} className="w-full mx-auto">
             <Link
               href={link.href}
               onClick={handleToggle} // Close modal on social link click
-              className="flex items-center gap-4 text-xl font-medium text-secondary hover:text-blue-500"
+              className="flex items-center justify-center gap-4 mx-auto text-xl font-medium text-secondary hover:text-blue-500"
             >
               <link.icon size={26} />
               {link.label}

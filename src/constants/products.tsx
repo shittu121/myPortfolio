@@ -2,12 +2,48 @@ import Educhain1 from "../../public/images/educhaingig1.png";
 import Educhain2 from "../../public/images/educhain2.png";
 import Amazechic from "../../public/images/Amazechic1.png";
 import Amazechic2 from "../../public/images/Amazechic2.png";
-import sidefolioMoonbeam from "../../public/images/sidefolio-moonbeam.png";
-import sidefolioMoonbeam2 from "../../public/images/sidefolio-moonbeam-2.png";
-import sidefolioTailwindMasterKit from "../../public/images/sidefolio-tailwindmasterkit.png";
-import sidefolioTailwindMasterKit2 from "../../public/images/sidefolio-tailwindmasterkit-2.png";
+import MaileHereko from "../../public/images/MaileHereko.png"
+import MaileHereko1 from "../../public/images/MaileHereko1.png"
+import MaileHereko2 from "../../public/images/MaileHereko2.png"
+import Taskflow from "../../public/images/taskflow.png"
+import Taskflow1 from "../../public/images/taskflow1.png"
+import Taskflow2 from "../../public/images/taskflow2.png"
 
 export const products = [
+  {
+    href: "https://taskmanagement-lovat.vercel.app/",
+    title: "Task Management Application",
+    description:
+      "Welcome to TaskFlow TaskFlow is your go-to solution for managing projects",
+    thumbnail: Taskflow,
+    images: [Taskflow1, Taskflow2],
+    stack: ["Reactjs", "Nextjs", "TypeScript", "Tailwindcss", "Shadcn UI", "Firebase", "Firestore", "Framer Motion", "Aceternity UI"],
+    slug: "taskflow",
+    content: (
+      <div>
+        <p>
+        assigning tasks, and collaborating with your team in real-time. Create projects, assign tasks, track progress, and stay organized effortlessly!{" "}
+        </p>
+      </div>
+    ),
+  },
+  {
+    href: "https://movie-listing-app-omega.vercel.app/",
+    title: "Explore Movies",
+    description:
+      "List of movies and Tv shows, built using Reactjs, Nextjs, TypeScript, and IMDB API",
+    thumbnail: MaileHereko,
+    images: [MaileHereko1, MaileHereko2],
+    stack: ["Reactjs", "Nextjs", "TypeScript", "Tailwindcss", "API"],
+    slug: "mailhereko",
+    content: (
+      <div>
+        <p>
+        List of movies and TV Shows, I, Pramod Poudel have watched till date. Explore what I have watched and also feel free to make a suggestion. 😉{" "}
+        </p>
+      </div>
+    ),
+  },
   {
     href: "https://edu-chain-nine.vercel.app/",
     title: "EduChain",
@@ -34,66 +70,6 @@ export const products = [
     images: [Amazechic, Amazechic2],
     stack: ["HTML", "CSS", "Tailwindcss", "JavaScript", "PHP"],
     slug: "Amazechic",
-    content: (
-      <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
-      </div>
-    ),
-  },
-  {
-    href: "https://ecommerce-rscr.onrender.com/",
-    title: "Ecommerce Project",
-    description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
-    thumbnail: sidefolioMoonbeam,
-    images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Html", "CSS", "Bootstrap", "JavaScript", "Jquery", "Django", "Paypal"],
-    slug: "kongalike",
-    content: (
-      <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
-      </div>
-    ),
-  },
-  {
-    href: "https://tailwindmasterkit.com",
-    title: "Tailwind Master Kit",
-    description:
-      "A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.",
-    thumbnail: sidefolioTailwindMasterKit,
-    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "tailwindmasterkit",
     content: (
       <div>
         <p>
