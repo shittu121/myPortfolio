@@ -12,6 +12,7 @@ import Taskflow2 from "../../public/images/taskflow2.png"
 export const products = [
   {
     href: "https://taskmanagement-lovat.vercel.app/",
+    github: "https://github.com/shittu121/TaskManagement",
     title: "Task Management Application",
     description:
       "Welcome to TaskFlow TaskFlow is your go-to solution for managing projects",
@@ -29,6 +30,7 @@ export const products = [
   },
   {
     href: "https://movie-listing-app-omega.vercel.app/",
+    github: "https://github.com/shittu121/movielistingapp",
     title: "Explore Movies",
     description:
       "List of movies and Tv shows, built using Reactjs, Nextjs, TypeScript, and IMDB API",
@@ -46,6 +48,7 @@ export const products = [
   },
   {
     href: "https://edu-chain-nine.vercel.app/",
+    github: "https://github.com/shittu121/EduChain",
     title: "EduChain",
     description:
       "EduChain is committed to empowering every users to get relevant web3 tutorials from our custom data.",
@@ -63,6 +66,7 @@ export const products = [
   },
   {
     href: "https://amazechic.com.iceiy.com/Store/src/index.php",
+    github: "https://github.com/shittu121/PauziiTechiTest",
     title: "AmazeChic",
     description:
       "An Ecommerce Website where you can get your Accessories, Clothes & Apparel",
@@ -73,20 +77,10 @@ export const products = [
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+        Welcome to our Ecommerce Website, your one-stop destination for all things stylish and functional! Explore an extensive collection of accessories, clothing, and apparel tailored to suit every style and occasion.{" "}
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
+        Whether you&apos;re looking for trendy outfits, practical accessories, or timeless wardrobe essentials, we&apos;ve got you covered. Discover quality products crafted with care, and enjoy a seamless shopping experience with features designed for your convenience. Elevate your style and find everything you need, all in one place!
         </p>{" "}
       </div>
     ),

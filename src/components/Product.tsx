@@ -35,7 +35,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
           width="1000"
           className="rounded-md object-contain"
         />
-        <div className="absolute bottom-0 bg-white h-40 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
+        <div className="rounded-md object-contain" />
       </motion.div>
       <div className="flex flex-row justify-center my-8 flex-wrap">
         {product.images.map((image, idx) => (
@@ -73,6 +73,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         {product?.content}
       </div>
 
+      <div className="flex items-center justify-between">
       <a
         href={product.href}
         target="__blank"
@@ -96,6 +97,31 @@ export const SingleProduct = ({ product }: { product: Product }) => {
           <path d="M13 6l6 6"></path>
         </svg>
       </a>
+
+      <a
+        href={product.github}
+        target="__blank"
+        className="inline-flex items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-auto origin-left"
+      >
+        View Code on GitHub
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
+        >
+          <path d="M5 12l14 0"></path>
+          <path d="M13 18l6 -6"></path>
+          <path d="M13 6l6 6"></path>
+        </svg>
+      </a>
+      </div>
     </div>
   );
 };

@@ -12,7 +12,7 @@ import { Badge } from "./Badge";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { isMobile } from "@/lib/utils";
-import Profile from "../../public/images/Profile.jpg";
+import Profile from "../../public/images/github.png";
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(isMobile() ? false : true);
@@ -33,7 +33,8 @@ export const Sidebar = () => {
               <Navigation setOpen={setOpen} />
             </div>
             <div onClick={() => isMobile() && setOpen(false)}>
-              <Badge href="/resume" text="Read Resume" />
+            <Badge  href="" text="Download Resume" />
+
             </div>
           </motion.div>
         )}
@@ -105,7 +106,8 @@ export const Navigation = ({
 
 const SidebarHeader = () => {
   return (
-    <div className="flex space-x-2">
+    <div>
+      <Link className="flex space-x-2" target="__blank" href="http://github.com/shittu121/">
       <Image
         src={Profile}
         alt="Avatar"
@@ -117,6 +119,7 @@ const SidebarHeader = () => {
         <p className="font-bold text-primary">Faruq Shittu</p>
         <p className="font-light text-secondary">Developer</p>
       </div>
+      </Link>
     </div>
   );
 };
