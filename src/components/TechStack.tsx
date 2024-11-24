@@ -12,16 +12,16 @@ export const TechStack = () => {
       className: "h-10 w-14",
     },
     {
-      title: "AWS",
-      src: "/images/logos/aws.webp",
+      title: "React",
+      src: "/images/react.jpg",
 
       className: "h-10 w-10",
     },
     {
-      title: "Figma",
-      src: "/images/logos/figma.png",
+      title: "Firebase",
+      src: "/images/firebase.jpg",
 
-      className: "h-10 w-8",
+      className: "h-10 w-14",
     },
     {
       title: "Framer Motion",
@@ -30,16 +30,40 @@ export const TechStack = () => {
       className: "h-10 w-10",
     },
     {
-      title: "Node",
-      src: "/images/logos/node.png",
+      title: "Shadcn",
+      src: "/images/shadcn.jpg",
 
-      className: "h-10 w-12",
+      className: "h-10 w-24",
+    },
+    {
+      title: "Aceternity",
+      src: "/images/aceternity.jpg",
+
+      className: "h-10 w-20",
+    },
+    {
+      title: "Html",
+      src: "/images/html.jpg",
+
+      className: "h-10 w-14",
     },
     {
       title: "Tailwind",
       src: "/images/logos/tailwind.png",
 
       className: "h-10 w-24",
+    },
+    {
+      title: "Php",
+      src: "/images/php.png",
+
+      className: "h-10 w-20",
+    },
+    {
+      title: "Mysql",
+      src: "/images/mysql.jpg",
+
+      className: "h-10 w-14",
     },
     {
       title: "Vercel",
