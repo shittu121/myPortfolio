@@ -2,6 +2,7 @@
 import { CardStack } from "../components/ui/card-stack";
 import { cn } from "../../lib/utils";
 import { Heading } from "./Heading";
+import OrbitingStack from "./OrbitingStack";
 export function Tesmonial() {
   return (
     <div className="">
@@ -50,6 +51,7 @@ const CARDS = [
       </p>
     ),
     imageUrl: "/images/review1.jpg",
+    icons: <OrbitingStack />
     
   },
   {
@@ -62,6 +64,7 @@ const CARDS = [
       </p>
     ),
     imageUrl: "/images/review2.jpg",
+    icons: <OrbitingStack />
   },
   {
     id: 2,
@@ -76,5 +79,6 @@ const CARDS = [
       </p>
     ),
     imageUrl: "/images/review3.jpg",
+    icons: <OrbitingStack />
   },
 ];

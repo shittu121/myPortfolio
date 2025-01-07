@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import OrbitingStack from "../OrbitingStack";
 
 
 let interval: any;
@@ -12,6 +13,7 @@ type Card = {
   designation: string;
   content: React.ReactNode;
   imageUrl: string;
+  icons: React.ReactNode; // Added this field for icons
 };
 
 export const CardStack = ({
@@ -59,16 +61,23 @@ export const CardStack = ({
             }}
           >
             <div className="font-normal text-neutral-700">
-              {card.content}
+                {card.content}
             </div>
-            <Image src={card.imageUrl} className="flex mx-auto w-96 lg:w-52 md:w-52 h-[25rem] lg:h-64 object-cover" alt="review1" width={200} height={50} />
-            <div>
-              <p className="text-neutral-500 font-medium">
-                {card.name}
-              </p>
-              <p className="text-neutral-400 font-normal">
-                {card.designation}
-              </p>
+            <div className="block lg:flex md:justify-between lg:justify-center gap-0 lg:gap-20 w-full items-center">
+              <div>
+               <Image src={card.imageUrl} className="flex mx-auto lg:mx-0 w-96 my-0 lg:my-5 lg:w-60 md:w-52 h-[25rem] lg:h-64 object-cover" alt="review1" width={200} height={50} />
+              </div>
+              <div className="">
+                <p className="text-neutral-500 font-medium">
+                  {card.name}
+                </p>
+                <p className="text-neutral-400 font-normal">
+                  {card.designation}
+                </p>
+              </div>
+              <div className="mx-10 sm-hidden md:hidden lg:flex">
+              {card.icons}
+              </div>
             </div>
           </motion.div>
         );

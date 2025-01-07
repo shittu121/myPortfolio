@@ -21,6 +21,19 @@ const config: Config = {
         primary: "var(--neutral-700)",
         secondary: "var(--neutral-500)",
       },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-40px)' },
+        },
+        "rotate-full": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), addVariablesForColors],
